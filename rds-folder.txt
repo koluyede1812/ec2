@@ -12,5 +12,5 @@ Resources:
       MasterUsername: admin
       MasterUserPassword: MySecurePassword123
       PubliclyAccessible: true
-      BackupRetentionPeriod: 7
+      BackupRetentionPeriod: 2
       LicenseModel: license-included
