@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Simple RDS SQL Server Instance
+
+Resources:
+  MyMSSQLDB:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      DBInstanceIdentifier: my-mssql-db
+      Engine: sqlserver-ex
+      DBInstanceClass: db.t3.micro
+      AllocatedStorage: 20
+      MasterUsername: admin
+      MasterUserPassword: MySecurePassword123
+      PubliclyAccessible: true
+      BackupRetentionPeriod: 7
+      LicenseModel: license-included
